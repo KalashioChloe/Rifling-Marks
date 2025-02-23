@@ -1,0 +1,31 @@
+1. Over Internet Commands
+
+Connecting to Host
+
+To connect to the host. First the client should send the connection request. 
+The host program will then Store the relevant IP and then will find the lowest available number (looking through what PlayerId's are already taken)
+the Host will send this data back to the client, having their local playerID set to this number
+Then, a player will be added to the current list with a placeholdername, the players IP, ID, etc
+Additionally a boolean "isLoaded" should be set to false to ensure this blank data does not get sent to players in the game
+The player will then enter their Username of choice
+
+Packets will have designations as the first two numbers to check what the packets "job" is
+>//< refers to the data the packet is carrying
+
+00 - Connect Request
+01 >00< - Set local Player ID 
+02 >000 x 16<- Set Player Name (ASCII)
+03 >Target lID | x | y | z < - Set Player Position
+04 >Target lID | x | y | z | w < - Set Player rotation
+05 -
+06 - 
+07 - 
+08 - 
+09 - 
+10 - 
+11 - 
+12 - 
+13 - 
+14 - 
+15 - 
+16 - 
