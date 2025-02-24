@@ -10,7 +10,6 @@ public class PlayerData : MonoBehaviour
     public Vector3 Position;
     public Quaternion Rotation;
     public Vector3 Scale;
-
 }
 
 //UDP Packet Structure for the game
